@@ -24,7 +24,7 @@ DJNesting.updateFormAttributes = function($elem, search, replace, selector) {
             'img', '.djn-group', '.djn-inline-form', '.cropduster-form',
             '.dal-forward-conf'].join(',');
     }
-    var addBackMethod = ($.fn.addBack) ? 'addBack' : 'andSelf';
+    var addBackMethod = ($.fn.addBack) ? 'addBack' : 'addBack';
     $elem.find(selector)[addBackMethod]().each(function() {
         var $node = $(this),
             attrs = ['id', 'name', 'for', 'href', 'class', 'onclick'];
